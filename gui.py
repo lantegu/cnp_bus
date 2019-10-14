@@ -252,8 +252,8 @@ class Ui_MainWindow(object):
         average_degree_ra.append(sz_bus.average_degree())
         average_clustering_c_in.append(sz_bus.average_clustering_c())
         average_clustering_c_ra.append(sz_bus.average_clustering_c())
-        num_of_sub_graph_in.append(sz_bus.num_of_sub_graph())
-        num_of_sub_graph_ra.append(sz_bus.num_of_sub_graph())
+        num_of_sub_graph_in.append(sz_bus.num_of_sub_graph()/100)
+        num_of_sub_graph_ra.append(sz_bus.num_of_sub_graph()/100)
         for i in range(1,10):
             sz_bus.create_net()
             sz_bus.intention_attack(10*i)
